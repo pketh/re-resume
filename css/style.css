@@ -142,12 +142,18 @@ body {
 }
 #pketh {
   position: absolute;
-  background-image: url('pketh.svg');
+  background-image: url('../img/pketh.svg');
   height: 27px;
   width: 81px;
   right: 0px;
   top: -20px;
   background-repeat: no-repeat;
+}
+.pketh-secret-text {
+  width: 81px;
+  height: 23px;
+  display: block;
+  text-indent: -99999px;
 }
 /* # */
 #header {
@@ -205,7 +211,7 @@ li {
   display: inline-block;
   list-style-type: none;
   background-repeat: no-repeat;
-  background-image: url('bubble.svg');
+  background-image: url('../img/bubble.svg');
   width: 65px;
   height: 40px;
   color: white;
@@ -233,7 +239,7 @@ li {
 }
 #today {
   background-repeat: no-repeat;
-  background-image: url('today.svg');
+  background-image: url('../img/today.svg');
   width: 15px;
   height: 25px;
   left: 392px;
@@ -424,14 +430,14 @@ li {
   width: 113px;
   position: absolute;
   left: 445px;
-  background-image: url('grad1.svg');
+  background-image: url('../img/grad1.svg');
   background-repeat: no-repeat;
 }
 #boxgrad1 {
   top: 726px;
 }
 #boxgrad2 {
-  background-image: url('grad1-2.svg');
+  background-image: url('../img/grad1-2.svg');
   background-repeat: no-repeat;
   height: 18px;
   top: 50px;
@@ -599,7 +605,7 @@ li {
   position: absolute;
 }
 .points {
-  background-image: url('point.svg');
+  background-image: url('../img/point.svg');
   background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
@@ -607,7 +613,7 @@ li {
   width: 9px;
 }
 .workpoints {
-  background-image: url('point2.svg');
+  background-image: url('../img/point2.svg');
 }
 #point1 {
   left: 589px;
