@@ -1,3 +1,7 @@
+// TODO: fix paths
+// TODO convert soulver units to LESS math
+// TODO add current job to top
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +58,7 @@ tk-adelle = adelle
 	600 = semibold
 	700 = bold
  */
- 
+
 html {
 }
 
@@ -118,9 +122,6 @@ li {
 	font-size: 24px;
 	font-weight: 400;
 	color: #222;
-	-webkit-transition: all .3s ;
-	-moz-transition: all .3s ;
-	-o-transition: all .3s ;
 	transition: all .3s ;
 }
 
@@ -183,9 +184,6 @@ li {
 	height: 25px;
 	left: 392px;
 	animation:today_anim 1.0s ease-in;
-	-webkit-animation:today_anim 1.0s ease-in;
-	-moz-animation:today_anim 1.0s ease-in;
-
 }
 
 @keyframes today_anim {
@@ -193,17 +191,6 @@ li {
 	80% {top: 48px}
 	100% {top: 43px;}
 }
-@-webkit-keyframes today_anim {
-	0% {top:0px;}
-	80% {top: 48px}
-	100% {top: 43px;}
-}
-@-moz-keyframes today_anim {
-	0% {top:0px;}
-	80% {top: 48px}
-	100% {top: 43px;}
-}
-
 
 #yr2012 {
 	left: 386px;
@@ -500,12 +487,8 @@ li {
 #box6, #location6, #description6, #point6,
 #box7, #location7, #description7, #point7,
 #box8, #location8, #description8, #point8 {
-	-webkit-transition: all .3s ;
-	-moz-transition: all .3s ;
-	-o-transition: all .3s ;
 	transition: all .3s ;
 }
- 
 
 
 /* ### */
@@ -624,10 +607,10 @@ li {
 	left: 18px;
 	top: 476px;
 }
- 
+
  #description7 {
- 	left: 18px;
- 	top: 570px;
+	left: 18px;
+	top: 570px;
 }
 
 /* # */
@@ -652,7 +635,6 @@ li {
 	width: 285px;
 }
 
-
 .skillsecs {
 	border-bottom: 1px #EFEFF0 solid;
 	border-left: 1px #fff solid;
@@ -660,9 +642,6 @@ li {
 	border-top: 1px #fff solid;
 	padding-top: 25px;
 	padding-left: 15px;
-	-webkit-transition: all .3s ;
-	-moz-transition: all .3s ;
-	-o-transition: all .3s ;
 	transition: all .3s ;
 	height: 200px;
 }
@@ -684,10 +663,8 @@ li {
 	font-family: "proxima-nova",sans-serif;
 	font-weight: 600;
 	font-size: 14px;
-	
- 	color: #333132;
- 	background-color: #EBEBEC;
-	
+	color: #333132;
+	background-color: #EBEBEC;
 	display: inline-block;
 	padding: 7px;
 	padding-left: 14px;
@@ -695,9 +672,6 @@ li {
 	margin-bottom: 10px;
 	border-radius: 10px;
 	opacity: .8;
-	-webkit-transition: all .2s ;
-	-moz-transition: all .2s ;
-	-o-transition: all .2s ;
 	transition: all .2s ;
 	box-shadow: 0px 1px rgba(255,255,255, 0.6);
 }
@@ -746,11 +720,7 @@ h4 {
 #footer a {
 	color: #333132;
 	text-decoration: underline;
-	-webkit-transition: all .3s ;
-	-moz-transition: all .3s ;
-	-o-transition: all .3s ;
 	transition: all .3s ;
-
 }
 
 #footer ul {
@@ -769,6 +739,3 @@ h4 {
 i {
 	font-style: italic;
 }
-
-
-
