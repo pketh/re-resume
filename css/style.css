@@ -1,0 +1,797 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  position: relative;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Styles begin */
+/* ------------------------------------------------------------------- */
+/*
+fonts set up using typekit classes:
+tk-proxima-nova = proxima nova
+tk-adelle = adelle
+	300 = light
+	400 = normal
+	600 = semibold
+	700 = bold
+ */
+body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: #222;
+}
+#pketh {
+  position: absolute;
+  background-image: url('pketh.svg');
+  height: 27px;
+  width: 81px;
+  right: 0px;
+  top: -20px;
+  background-repeat: no-repeat;
+}
+/* # */
+#header {
+  margin-top: 61px;
+}
+/* ## */
+h1 {
+  font-size: 43px;
+  font-weight: 700;
+  font-family: "adelle", serif;
+  color: #111;
+}
+h2 {
+  font-size: 43px;
+  font-weight: 400;
+  font-family: "proxima-nova", sans-serif;
+  margin-top: 36px;
+  line-height: 49px;
+  margin-bottom: 41px;
+}
+li {
+  display: inline;
+  list-style-type: none;
+}
+#nav {
+  margin-bottom: 66px;
+  font-family: "adelle", serif;
+}
+#nav li {
+  padding-right: 26px;
+}
+#nav li a {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: 400;
+  color: #222;
+  -webkit-transition: all .3s ;
+  transition: all .3s ;
+}
+#nav li a:hover {
+  color: #6B82D2;
+}
+/* # */
+#experience {
+  position: relative;
+  height: 735px;
+  margin-bottom: 114px;
+}
+/* ## */
+#bubbles {
+  padding-top: 3px;
+  font-family: "proxima-nova", sans-serif;
+}
+#bubbles li {
+  display: inline-block;
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-image: url('bubble.svg');
+  width: 65px;
+  height: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+#work {
+  margin-left: 258px;
+  padding-left: 19px;
+  padding-top: 5px;
+}
+#school {
+  margin-left: 117px;
+  padding-left: 14px;
+  padding-top: 5px;
+}
+/* ## */
+/* ### */
+.legend {
+  position: absolute;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "adelle", serif;
+}
+#today {
+  background-repeat: no-repeat;
+  background-image: url('today.svg');
+  width: 15px;
+  height: 25px;
+  left: 392px;
+  animation: today_anim 1s ease-in;
+  -webkit-animation: today_anim 1s ease-in;
+  -moz-animation: today_anim 1s ease-in;
+}
+@keyframes today_anim {
+  0% {
+    top: 0px;
+  }
+  80% {
+    top: 48px;
+  }
+  100% {
+    top: 43px;
+  }
+}
+@-webkit-keyframes today_anim {
+  0% {
+    top: 0px;
+  }
+  80% {
+    top: 48px;
+  }
+  100% {
+    top: 43px;
+  }
+}
+#yr2012 {
+  left: 386px;
+  top: 192px;
+}
+#yr2010 {
+  left: 387px;
+  top: 368px;
+}
+#yr2008 {
+  left: 387px;
+  top: 543px;
+}
+#yr2006 {
+  left: 386px;
+  top: 718px;
+}
+/* ### */
+.lines {
+  position: absolute;
+  background-color: #E6E6E6;
+  width: 377px;
+  height: 1px;
+}
+.lines_right {
+  left: 421px;
+}
+#line1 {
+  top: 60px;
+}
+#line2 {
+  top: 200px;
+}
+#line3 {
+  top: 375px;
+}
+#line4 {
+  top: 550px;
+}
+#line5 {
+  top: 726px;
+}
+/* ### */
+.boxes {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "proxima-nova", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 0px rgba(2, 2, 2, 0.54);
+  position: absolute;
+  width: 113px;
+  border-radius: 3px;
+  left: 445px;
+  vertical-align: middle;
+  background-color: #6650D3;
+}
+.boxestext {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+}
+#box1 {
+  top: 260px;
+  height: 204px;
+}
+#box2 {
+  background-color: #0CBC73;
+  /* green */
+  top: 551px;
+  height: 175px;
+  /* rounded corners 3 px top, 0 bottom */
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#box3-1 {
+  height: 46px;
+  left: 240px;
+  top: 60px;
+  background-color: #0CBC73;
+  border-radius: 0;
+}
+#box3 {
+  height: 168px;
+  left: 240px;
+  top: 106px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#box4 {
+  height: 44px;
+  left: 240px;
+  top: 300px;
+  background-color: #0cbc73;
+}
+#box5 {
+  left: 240px;
+  top: 360px;
+  height: 86px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#box6 {
+  left: 240px;
+  top: 446px;
+  height: 105px;
+  background-color: #0CBC73;
+  /* green */
+  border-radius: 0px;
+}
+#box7 {
+  left: 240px;
+  top: 551px;
+  height: 86px;
+  border-radius: 0px;
+}
+#box8 {
+  left: 240px;
+  top: 637px;
+  height: 89px;
+  background-color: #0CBC73;
+  /* green */
+  border-radius: 0px;
+}
+#boxtext1 {
+  margin-top: -30px;
+}
+#boxtext2 {
+  margin-top: -20px;
+  left: 26%;
+}
+#boxtext3 {
+  top: 32%;
+}
+#boxtext3-1 {
+  top: 28%;
+}
+#boxtext4 {
+  top: 30%;
+  left: 15%;
+}
+#boxtext5 {
+  top: 27%;
+  left: 21%;
+}
+#boxtext6 {
+  top: 30%;
+  left: 8%;
+}
+#boxtext7 {
+  top: 30%;
+  left: 17%;
+}
+#boxtext8 {
+  top: 30%;
+  left: 18%;
+}
+.boxgrads {
+  height: 21px;
+  width: 113px;
+  position: absolute;
+  left: 445px;
+  background-image: url('grad1.svg');
+  background-repeat: no-repeat;
+}
+#boxgrad1 {
+  top: 726px;
+}
+#boxgrad2 {
+  background-image: url('grad1-2.svg');
+  background-repeat: no-repeat;
+  height: 18px;
+  top: 50px;
+  left: 240px;
+}
+#boxgrad3 {
+  top: 726px;
+  left: 240px;
+}
+/* ### */
+.locations {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+  font-weight: 400;
+  position: absolute;
+  left: 598px;
+}
+#location1 {
+  top: 305px;
+}
+#location2 {
+  top: 578px;
+}
+#location3 {
+  left: 18px;
+  top: 144px;
+}
+#location3-1 {
+  left: 18px;
+  top: 35px;
+}
+#location4 {
+  left: 18px;
+  top: 264px;
+}
+#location5 {
+  left: 18px;
+  top: 365px;
+}
+#location6 {
+  left: 18px;
+  top: 452px;
+}
+/* BOX TRANSITIONS */
+/* RIGHT SIDE */
+#group1:hover #box1 {
+  background-color: #7660e5;
+}
+/* purple */
+#group1:hover #location1,
+#group1:hover #description1,
+#group2:hover #location2,
+#group2:hover #description2 {
+  left: 585px;
+}
+#group1:hover #point1,
+#group2:hover #point2 {
+  left: 576px;
+}
+#group2:hover #box2 {
+  background-color: #09c778;
+}
+/* grn */
+/* LEFT SIDE */
+#group3:hover #box3 {
+  background-color: #7660e5;
+}
+#group3:hover #location3,
+#group3:hover #description3,
+#group3-1:hover #location3-1,
+#group3-1:hover #description3-1,
+#group4:hover #location4,
+#group4:hover #description4,
+#group5:hover #location5,
+#group5:hover #description5,
+#group6:hover #location6,
+#group6:hover #description6,
+#group7:hover #location7,
+#group7:hover #description7,
+#group8:hover #location8,
+#group8:hover #description8 {
+  left: 32px;
+}
+#group3:hover #point3,
+#group3-1:hover #point3-1,
+#group4:hover #point4,
+#group5:hover #point5,
+#group6:hover #point6,
+#group7:hover #point7,
+#group8:hover #point8 {
+  left: 214px;
+}
+#group3-1:hover #box3-1 {
+  background-color: #09c778;
+}
+#group4:hover #box4 {
+  background-color: #09c778;
+}
+#group5:hover #box5 {
+  background-color: #7660e5;
+}
+#group6:hover #box6 {
+  background-color: #09c778;
+}
+#group7:hover #box7 {
+  background-color: #7660e5;
+}
+#group8:hover #box8 {
+  background-color: #09c778;
+}
+#box1,
+#location1,
+#description1,
+#point1,
+#box2,
+#location2,
+#description2,
+#point2,
+#box3,
+#location3,
+#description3,
+#point3,
+#box3-1,
+#location3-1,
+#description3-1,
+#point3-1,
+#box4,
+#location4,
+#description4,
+#point4,
+#box5,
+#location5,
+#description5,
+#point5,
+#box6,
+#location6,
+#description6,
+#point6,
+#box7,
+#location7,
+#description7,
+#point7,
+#box8,
+#location8,
+#description8,
+#point8 {
+  -webkit-transition: all .3s ;
+  transition: all .3s ;
+}
+/* ### */
+.descriptions {
+  font-family: 'adelle', serif;
+  color: #555D53;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 154px;
+  left: 598px;
+  background-color: #CFE8CB;
+  position: absolute;
+}
+.points {
+  background-image: url('point.svg');
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  height: 17px;
+  width: 9px;
+}
+.workpoints {
+  background-image: url('point2.svg');
+}
+#point1 {
+  left: 589px;
+  top: 354px;
+}
+#point2 {
+  left: 589px;
+  top: 637px;
+}
+#point3 {
+  left: 200px;
+  top: 193px;
+}
+#point3-1 {
+  left: 200px;
+  top: 74px;
+}
+#point4 {
+  left: 200px;
+  top: 313px;
+}
+#point5 {
+  left: 200px;
+  top: 394px;
+}
+#point6 {
+  left: 200px;
+  top: 491px;
+}
+#point7 {
+  left: 200px;
+  top: 586px;
+}
+.underlined {
+  font-family: "adelle", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+#description1 {
+  top: 329px;
+}
+#description2 {
+  top: 601px;
+}
+#description3 {
+  left: 18px;
+  top: 167px;
+}
+#description3-1 {
+  left: 18px;
+  top: 58px;
+}
+#description4 {
+  left: 18px;
+  top: 288px;
+}
+#description5 {
+  left: 18px;
+  top: 388px;
+}
+#description6 {
+  left: 18px;
+  top: 476px;
+}
+#description7 {
+  left: 18px;
+  top: 570px;
+}
+/* # */
+#skills_h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* table {
+	width: 100%;
+}
+ */
+.col1 {
+  float: left;
+  width: 455px;
+}
+.col2 {
+  float: left;
+  padding-left: 40px;
+  width: 285px;
+}
+.skillsecs {
+  border-bottom: 1px #EFEFF0 solid;
+  border-left: 1px #fff solid;
+  border-right: 1px #fff solid;
+  border-top: 1px #fff solid;
+  padding-top: 25px;
+  padding-left: 15px;
+  -webkit-transition: all .3s ;
+  transition: all .3s ;
+  height: 200px;
+}
+.skillsecs:hover {
+  border: 1px #E6E6E6 solid;
+  -webkit-box-shadow: 0px 0px 6px #E6E6E6;
+          box-shadow: 0px 0px 6px #E6E6E6;
+  border-radius: 3px;
+  background-color: #EDEEF5;
+}
+.skillbubbles li:hover,
+.skillbubbles-hover {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) !important;
+  background-color: #B8B8C8 !important;
+  color: #21213b !important;
+}
+.skillbubbles li,
+.skillbubble {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333132;
+  background-color: #EBEBEC;
+  display: inline-block;
+  padding: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  opacity: .8;
+  -webkit-transition: all .2s ;
+  transition: all .2s ;
+  -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 1px rgba(255, 255, 255, 0.6);
+}
+h4 {
+  font-family: "adelle", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  display: block;
+}
+.description {
+  font-family: "adelle", serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+/* # */
+#current-location {
+  float: left;
+  margin-top: -5px;
+}
+#current-location img {
+  vertical-align: -35%;
+  width: 8px;
+  margin-right: 2px;
+}
+#footer {
+  clear: both;
+  font-family: "adelle", serif;
+  color: #888;
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+#footer a {
+  color: #333132;
+  text-decoration: underline;
+  -webkit-transition: all .3s ;
+  transition: all .3s ;
+}
+#footer ul {
+  float: right;
+  margin-left: 202px;
+}
+#footer li {
+  padding-left: 35px;
+}
+#footer a:hover {
+  color: #6B82D2;
+}
+i {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
