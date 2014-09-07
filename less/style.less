@@ -1,7 +1,10 @@
 @import (less) "reset.css";
 
-@months: 7.3px; // 175 / 24
+@month: 7.3px; // (175 / 24)
+@year: @month * 12;
+@two-year: @month * 24;
 @top: 60px;
+
 
 @green: #09C778;
 @purple: #7660e5;
@@ -22,13 +25,6 @@ body {
 	right: 0px;
 	top: -20px;
 	background-repeat: no-repeat;
-}
-
-.pketh-secret-text {
-	width:81px;
-	height:23px;
-	display:block;
-	text-indent: -99999px;
 }
 
 /* # */
@@ -83,7 +79,7 @@ nav li a:hover {
 /* # */
 #experience {
 	position: relative;
-	height: 735px;
+	height: 835px;
 	margin-bottom: 114px;
 }
 
@@ -143,6 +139,11 @@ nav li a:hover {
 	100% {top: 43px;}
 }
 
+#yr2014 {
+	left: 386px;
+	top: calc(@top - 8px);
+}
+
 #yr2012 {
 	left: 386px;
 	top: 192px;
@@ -164,22 +165,44 @@ nav li a:hover {
 }
 
 /* ### */
-.lines {
+.line {
 	position: absolute;
 	background-color: #E6E6E6;
 	width: 377px;
 	height: 1px;
 }
 
-.lines_right {
+.line-right {
 	left: 421px;
 }
 
-#line1 {top:60px;}
-#line2 {top:200px;}
-#line3 {top:375px;}
-#line4 {top:550px}
-#line5 {top:726px}
+@monthnum: 9;
+@fromToday: (@monthnum * @month) + @top;
+@2014: @top + @fromToday; // was 60
+@2012: @2014 + @two-year; // was 200
+@2010: @2012 + @two-year; // was 375
+@2008: @2010 + @two-year; // was 550
+@2006: @2008 + @two-year; // was 726
+
+.line-today {
+	top: @top;
+}
+
+.line-2014 {
+	top: @2014;
+}
+.line-2012 {
+	top: @2012;
+}
+.line-2010 {
+	top: @2010;
+}
+.line-2008 {
+	top: @2008;
+}
+.line-2006 {
+	top: @2006;
+}
 
 /* ### */
 
@@ -478,7 +501,7 @@ nav li a:hover {
 	position: absolute;
 }
 
-.descriptions-left {}
+.descriptions-work {}
 
 .points {
 	background-image: url('../img/point.svg');
@@ -489,8 +512,8 @@ nav li a:hover {
 	width: 9px;
 }
 
-.workpoints {
-	background-image: url('../img/point-uoft.svg');
+.points-work {
+	background-image: url('../img/point-work.svg');
 }
 
 

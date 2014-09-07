@@ -138,12 +138,6 @@ body {
   top: -20px;
   background-repeat: no-repeat;
 }
-.pketh-secret-text {
-  width: 81px;
-  height: 23px;
-  display: block;
-  text-indent: -99999px;
-}
 /* # */
 header {
   margin-top: 61px;
@@ -188,7 +182,7 @@ nav li a:hover {
 /* # */
 #experience {
   position: relative;
-  height: 735px;
+  height: 835px;
   margin-bottom: 114px;
 }
 /* ## */
@@ -257,6 +251,10 @@ nav li a:hover {
     top: 43px;
   }
 }
+#yr2014 {
+  left: 386px;
+  top: calc(52px);
+}
 #yr2012 {
   left: 386px;
   top: 192px;
@@ -274,29 +272,32 @@ nav li a:hover {
   top: 718px;
 }
 /* ### */
-.lines {
+.line {
   position: absolute;
   background-color: #E6E6E6;
   width: 377px;
   height: 1px;
 }
-.lines_right {
+.line-right {
   left: 421px;
 }
-#line1 {
+.line-today {
   top: 60px;
 }
-#line2 {
-  top: 200px;
+.line-2014 {
+  top: 185.7px;
 }
-#line3 {
-  top: 375px;
+.line-2012 {
+  top: 360.9px;
 }
-#line4 {
-  top: 550px;
+.line-2010 {
+  top: 536.1px;
 }
-#line5 {
-  top: 726px;
+.line-2008 {
+  top: 711.3px;
+}
+.line-2006 {
+  top: 886.5px;
 }
 /* ### */
 .boxes {
@@ -607,8 +608,8 @@ nav li a:hover {
   height: 17px;
   width: 9px;
 }
-.workpoints {
-  background-image: url('../img/point-uoft.svg');
+.points-work {
+  background-image: url('../img/point-work.svg');
 }
 #point-ryerson {
   left: 589px;
