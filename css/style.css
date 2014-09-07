@@ -317,13 +317,13 @@ nav li a:hover {
   left: 22%;
 }
 #box-ryerson {
-  top: 260px;
+  top: 419.3px;
   height: 204px;
 }
 #box-uoft {
   background-color: #0CBC73;
-  top: 551px;
-  height: 175px;
+  top: 711.3px;
+  height: 176.2px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -422,7 +422,7 @@ nav li a:hover {
   background-repeat: no-repeat;
 }
 #boxgrad1 {
-  top: 726px;
+  top: 886.5px;
 }
 #boxgrad2 {
   background-image: url('../img/grad1-2.svg');
@@ -501,8 +501,8 @@ nav li a:hover {
 .freshbooks:hover .descriptions,
 #group-cui:hover #location4,
 #group-cui:hover #description4,
-#group5:hover #location5,
-#group5:hover #description5,
+#group-ta:hover #location5,
+#group-ta:hover #description5,
 #group6:hover #location6,
 #group6:hover #description6,
 #group7:hover #location7,
@@ -515,7 +515,7 @@ nav li a:hover {
 #group-wishabi:hover #point-wishabi,
 #group-bibliocommons:hover #point-bibliocommons,
 .freshbooks:hover .points,
-#group5:hover #point5,
+#group-ta:hover #point5,
 #group6:hover #point6,
 #group7:hover #point7,
 #group8:hover #point8 {
@@ -530,7 +530,7 @@ nav li a:hover {
 #group-cui:hover #box4 {
   background-color: #09c778;
 }
-#group5:hover #box5 {
+#group-ta:hover #box5 {
   background-color: #7660e5;
 }
 #group6:hover #box6 {

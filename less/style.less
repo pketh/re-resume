@@ -2,7 +2,7 @@
 
 @month: 7.3px; // (175 / 24)
 @year: @month * 12;
-@two-year: @month * 24;
+@twoYear: @month * 24;
 @top: 60px;
 
 @green: #09C778;
@@ -11,10 +11,10 @@
 @currentMonthNum: 9;
 @fromToday: (@currentMonthNum * @month) + @top;
 @2014: @top + @fromToday;
-@2012: @2014 + @two-year;
-@2010: @2012 + @two-year;
-@2008: @2010 + @two-year;
-@2006: @2008 + @two-year;
+@2012: @2014 + @twoYear;
+@2010: @2012 + @twoYear;
+@2008: @2010 + @twoYear;
+@2006: @2008 + @twoYear;
 @legendTextOffset: 8px;
 
 body {
@@ -229,14 +229,14 @@ nav li a:hover {
 
 
 #box-ryerson {
-	top: 260px;
+	top: @2012 + (@month * 8);
 	height: 204px;
 }
 
 #box-uoft {
 	background-color: #0CBC73;
-	top: 551px;
-	height: 175px;
+	top: @2008;
+	height: @twoYear + 1;
 
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -249,7 +249,7 @@ nav li a:hover {
 	background-color: #0CBC73
 }
 
-#box-bibliocommons { // biblio
+#box-bibliocommons {
 	height: 46px;
 	left: 240px;
 	top: @top;
@@ -358,7 +358,7 @@ nav li a:hover {
 }
 
 #boxgrad1 {
-	top: 726px;
+	top: @2006;
 }
 
 #boxgrad2 {
@@ -443,7 +443,7 @@ nav li a:hover {
 #group-bibliocommons:hover #location-bibliocommons, #group-bibliocommons:hover #description-bibliocommons,
 .freshbooks:hover .locations, .freshbooks:hover .descriptions,
 #group-cui:hover #location4, #group-cui:hover #description4,
-#group5:hover #location5, #group5:hover #description5,
+#group-ta:hover #location5, #group-ta:hover #description5,
 #group6:hover #location6, #group6:hover #description6,
 #group7:hover #location7, #group7:hover #description7,
 #group8:hover #location8, #group8:hover #description8 {
@@ -454,7 +454,7 @@ nav li a:hover {
 #group-wishabi:hover #point-wishabi,
 #group-bibliocommons:hover #point-bibliocommons,
 .freshbooks:hover .points,
-#group5:hover #point5,
+#group-ta:hover #point5,
 #group6:hover #point6,
 #group7:hover #point7,
 #group8:hover #point8 {
@@ -464,7 +464,7 @@ nav li a:hover {
 #group-bibliocommons:hover #box-bibliocommons {background-color: @green}
 .freshbooks:hover .boxes {background-color: @green}
 #group-cui:hover #box4 {background-color: @green}
-#group5:hover #box5 {background-color: @purple}
+#group-ta:hover #box5 {background-color: @purple}
 #group6:hover #box6 {background-color: @green}
 #group7:hover #box7 {background-color: @purple}
 #group8:hover #box8 {background-color: @green}
