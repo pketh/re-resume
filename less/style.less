@@ -1,66 +1,10 @@
-// TODO: fix paths
-// TODO convert soulver units to LESS math
-// TODO add current job to top
+@import (less) "reset.css";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+@months: 7.3px; // 175 / 24
+@top: 60px;
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	position: relative;
-}
-
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Styles begin */
-/* ------------------------------------------------------------------- */
-/*
-fonts set up using typekit classes:
-tk-proxima-nova = proxima nova
-tk-adelle = adelle
-	300 = light
-	400 = normal
-	600 = semibold
-	700 = bold
- */
-
-html {
-}
+@green: #09C778;
+@purple: #7660e5;
 
 body {
 	width:800px;
@@ -81,7 +25,10 @@ body {
 }
 
 .pketh-secret-text {
-	width:81px; height:23px; display:block; text-indent: -99999px;
+	width:81px;
+	height:23px;
+	display:block;
+	text-indent: -99999px;
 }
 
 /* # */
@@ -259,30 +206,37 @@ li {
 }
 
 
-#box1 {
+#box-ryerson {
 	top: 260px;
 	height: 204px;
 }
 
-#box2 {
-	background-color: #0CBC73; /* green */
+#box-uoft {
+	background-color: #0CBC73;
 	top: 551px;
 	height: 175px;
-	/* rounded corners 3 px top, 0 bottom */
+
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
 
-#box3-1 {
+#box-freshbooks {
+	height: 44px;
+	left: 240px;
+	top: 300px;
+	background-color: #0CBC73
+}
+
+#box-bibliocommons { // biblio
 	height: 46px;
 	left: 240px;
-	top: 60px;
+	top: @top;
 	background-color: #0CBC73;
 	border-radius: 0;
 }
 
 
-#box3 {
+#box-wishabi {
 	height: 168px;
 	left: 240px;
 	top: 106px;
@@ -309,7 +263,7 @@ li {
 	left: 240px;
 	top: 446px;
 	height: 105px;
-	background-color: #0CBC73; /* green */
+	background-color: #0CBC73;
 	border-radius: 0px;
 }
 
@@ -324,25 +278,25 @@ li {
 	left: 240px;
 	top: 637px;
 	height: 89px;
-	background-color: #0CBC73; /* green */
+	background-color: #0CBC73;
 	border-radius: 0px;
 }
 
 
-#boxtext1 {
+#boxtext-ryerson {
 	margin-top: -30px;
 }
 
-#boxtext2 {
+#boxtext-uoft {
 	margin-top: -20px;
 	left: 26%;
 }
 
-#boxtext3 {
+#boxtext-wishabi {
 	top: 32%;
 }
 
-#boxtext3-1 {
+#boxtext-bibliocommons {
 	top: 28%;
 }
 
@@ -411,20 +365,20 @@ li {
 	left: 598px;
 }
 
-#location1 {
+#location-ryerson {
 	top: 305px;
 }
 
-#location2 {
+#location-uoft {
 	top: 578px;
 }
 
-#location3 {
+#location-wishabi {
 	left: 18px;
 	top: 144px;
 }
 
-#location3-1 {
+#location-bibliocommons {
 	left: 18px;
 	top: 35px;
 }
@@ -447,45 +401,57 @@ li {
 
 /* BOX TRANSITIONS */
 /* RIGHT SIDE */
-#group1:hover #box1 {background-color: #7660e5} /* purple */
-#group1:hover #location1, #group1:hover #description1, #group2:hover #location2, #group2:hover #description2 {left: 585px}
-#group1:hover #point1, #group2:hover #point2 {left: 576px}
+#group-ryerson:hover #box-ryerson {
+	background-color: @purple
+}
+#group-ryerson:hover #location-ryerson, #group-ryerson:hover #description-ryerson, #group-uoft:hover #location-uoft, #group-uoft:hover #description-uoft {left: 585px}
+#group-ryerson:hover #point-ryerson, #group-uoft:hover #point-uoft {
+	left: 576px
+}
 
-#group2:hover #box2 {background-color: #09C778} /* grn */
+#group-uoft:hover #box-uoft {
+	background-color: @green
+}
 
 /* LEFT SIDE */
-#group3:hover #box3 {background-color: #7660e5}
-#group3:hover #location3, #group3:hover #description3,
-
-#group3-1:hover #location3-1, #group3-1:hover #description3-1,
-
-#group4:hover #location4, #group4:hover #description4,
+#group-wishabi:hover #box-wishabi {
+	background-color: @purple
+}
+#group-wishabi:hover #location-wishabi, #group-wishabi:hover #description-wishabi,
+#group-bibliocommons:hover #location-bibliocommons, #group-bibliocommons:hover #description-bibliocommons,
+.freshbooks:hover .locations, .freshbooks:hover .descriptions,
+#group-cui:hover #location4, #group-cui:hover #description4,
 #group5:hover #location5, #group5:hover #description5,
 #group6:hover #location6, #group6:hover #description6,
 #group7:hover #location7, #group7:hover #description7,
-#group8:hover #location8, #group8:hover #description8 {left: 32px}
+#group8:hover #location8, #group8:hover #description8 {
+	left: 32px
+}
 
-#group3:hover #point3,
-#group3-1:hover #point3-1,
-#group4:hover #point4,
+#group-cui:hover #point-cui,
+#group-wishabi:hover #point-wishabi,
+#group-bibliocommons:hover #point-bibliocommons,
+.freshbooks:hover .points,
 #group5:hover #point5,
 #group6:hover #point6,
 #group7:hover #point7,
-#group8:hover #point8
-{left: 214px}
+#group8:hover #point8 {
+	left: 214px
+}
 
-#group3-1:hover #box3-1 {background-color: #09C778}
-#group4:hover #box4 {background-color: #09C778}
-#group5:hover #box5 {background-color: #7660e5}
-#group6:hover #box6 {background-color: #09C778}
-#group7:hover #box7 {background-color: #7660e5}
-#group8:hover #box8 {background-color: #09C778}
+#group-bibliocommons:hover #box-bibliocommons {background-color: @green}
+.freshbooks:hover .boxes {background-color: @green}
+#group-cui:hover #box4 {background-color: @green}
+#group5:hover #box5 {background-color: @purple}
+#group6:hover #box6 {background-color: @green}
+#group7:hover #box7 {background-color: @purple}
+#group8:hover #box8 {background-color: @green}
 
 
-#box1, #location1, #description1, #point1,
-#box2, #location2, #description2, #point2,
-#box3, #location3, #description3, #point3,
-#box3-1, #location3-1, #description3-1, #point3-1,
+#box-ryerson, #location-ryerson, #description-ryerson, #point-ryerson,
+#box-uoft, #location-uoft, #description-uoft, #point-uoft,
+#box-wishabi, #location-wishabi, #description-wishabi, #point-wishabi,
+#box-bibliocommons, #location-bibliocommons, #description-bibliocommons, #point-bibliocommons,
 #box4, #location4, #description4, #point4,
 #box5, #location5, #description5, #point5,
 #box6, #location6, #description6, #point6,
@@ -512,6 +478,8 @@ li {
 	position: absolute;
 }
 
+.descriptions-left {}
+
 .points {
 	background-image: url('../img/point.svg');
 	background-repeat: no-repeat;
@@ -522,27 +490,27 @@ li {
 }
 
 .workpoints {
-	background-image: url('../img/point2.svg');
+	background-image: url('../img/point-uoft.svg');
 }
 
 
-#point1{
+#point-ryerson{
 	left: 589px;
 	top: 354px;
 }
 
-#point2 {
+#point-uoft {
 	left: 589px;
 	top: 637px;
 }
 
-#point3 {
+#point-wishabi {
 	left: 200px;
 	top: 193px;
 }
 
 
-#point3-1 {
+#point-bibliocommons {
 	left: 200px;
 	top: 74px;
 }
@@ -578,20 +546,20 @@ li {
 	text-decoration: underline;
 }
 
-#description1 {
+#description-ryerson {
 	top: 329px;
 }
 
-#description2 {
+#description-uoft {
 	top: 601px;
 }
 
-#description3 {
+#description-wishabi {
 	left: 18px;
 	top: 167px;
 }
 
-#description3-1 {
+#description-bibliocommons {
 	left: 18px;
 	top: 58px;
 }
@@ -620,7 +588,7 @@ li {
 /* # */
 
 #skills_h2 {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	margin-top: 20px;
 }
 
@@ -630,7 +598,7 @@ li {
  */
 .col1 {
 	float: left;
-	width: 455px;
+	width: 470px;
 }
 
 .col2 {
@@ -645,7 +613,6 @@ li {
 	border-right: 1px #fff solid;
 	border-top: 1px #fff solid;
 	padding-top: 25px;
-	padding-left: 15px;
 	transition: all .3s ;
 	height: 200px;
 }

@@ -25,7 +25,7 @@
 			</item>
 			<item>
 				<key>SVTextSelectionLocation</key>
-				<value>25</value>
+				<value>64</value>
 			</item>
 			<item>
 				<key>SVStatisticsBarVisible</key>
@@ -33,7 +33,7 @@
 			</item>
 			<item>
 				<key>CreatorVersion</key>
-				<value>2.4.2</value>
+				<value>2.4.5</value>
 			</item>
 			<item>
 				<key>SVNumberLineVisible</key>
@@ -258,171 +258,7 @@
 			</formatting>
 		</line>
 		<line>
-			<expression>make $month</expression>
-			<formatting>
-				<item>
-					<key>sn_mode</key>
-					<value>2</value>
-				</item>
-				<item>
-					<key>display_format</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>sn_style</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>decimal_places</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>thousands_separator</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>trailing_zeros</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>display_base</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>sn_exp_granularity</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>expr_text_align</key>
-					<value>0</value>
-				</item>
-			</formatting>
-		</line>
-		<line>
-			<expression>? make $year</expression>
-			<formatting>
-				<item>
-					<key>sn_mode</key>
-					<value>2</value>
-				</item>
-				<item>
-					<key>display_format</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>sn_style</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>decimal_places</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>thousands_separator</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>trailing_zeros</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>display_base</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>sn_exp_granularity</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>expr_text_align</key>
-					<value>0</value>
-				</item>
-			</formatting>
-		</line>
-		<line>
-			<expression></expression>
-			<formatting>
-				<item>
-					<key>sn_mode</key>
-					<value>2</value>
-				</item>
-				<item>
-					<key>display_format</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>sn_style</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>decimal_places</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>thousands_separator</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>trailing_zeros</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>display_base</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>sn_exp_granularity</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>expr_text_align</key>
-					<value>0</value>
-				</item>
-			</formatting>
-		</line>
-		<line>
-			<expression># example scss math</expression>
-			<formatting>
-				<item>
-					<key>sn_mode</key>
-					<value>2</value>
-				</item>
-				<item>
-					<key>display_format</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>sn_style</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>decimal_places</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>thousands_separator</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>trailing_zeros</key>
-					<value>0</value>
-				</item>
-				<item>
-					<key>display_base</key>
-					<value>10</value>
-				</item>
-				<item>
-					<key>sn_exp_granularity</key>
-					<value>1</value>
-				</item>
-				<item>
-					<key>expr_text_align</key>
-					<value>0</value>
-				</item>
-			</formatting>
-		</line>
-		<line>
-			<expression>top: $var / 23;</expression>
+			<expression># experience has height</expression>
 			<formatting>
 				<item>
 					<key>sn_mode</key>
