@@ -5,9 +5,17 @@
 @two-year: @month * 24;
 @top: 60px;
 
-
 @green: #09C778;
 @purple: #7660e5;
+
+@currentMonthNum: 9;
+@fromToday: (@currentMonthNum * @month) + @top;
+@2014: @top + @fromToday;
+@2012: @2014 + @two-year;
+@2010: @2012 + @two-year;
+@2008: @2010 + @two-year;
+@2006: @2008 + @two-year;
+@legendTextOffset: 8px;
 
 body {
 	width:800px;
@@ -122,6 +130,7 @@ nav li a:hover {
 	font-size: 14px;
 	font-weight: 300;
 	font-family: "adelle",serif;
+	left: 386px;
 }
 
 #today {
@@ -139,29 +148,25 @@ nav li a:hover {
 	100% {top: 43px;}
 }
 
+
 #yr2014 {
-	left: 386px;
-	top: calc(@top - 8px);
+	top: @2014 - @legendTextOffset;
 }
 
 #yr2012 {
-	left: 386px;
-	top: 192px;
+	top: @2012 - @legendTextOffset;
 }
 
 #yr2010 {
-	left: 387px;
-	top: 368px;
+	top: @2010 - @legendTextOffset;
 }
 
 #yr2008 {
-	left: 387px;
-	top: 543px;
+	top: @2008 - @legendTextOffset;
 }
 
 #yr2006 {
-	left: 386px;
-	top: 718px;
+	top: @2006 - @legendTextOffset;
 }
 
 /* ### */
@@ -176,13 +181,7 @@ nav li a:hover {
 	left: 421px;
 }
 
-@monthnum: 9;
-@fromToday: (@monthnum * @month) + @top;
-@2014: @top + @fromToday; // was 60
-@2012: @2014 + @two-year; // was 200
-@2010: @2012 + @two-year; // was 375
-@2008: @2010 + @two-year; // was 550
-@2006: @2008 + @two-year; // was 726
+
 
 .line-today {
 	top: @top;

@@ -219,6 +219,7 @@ nav li a:hover {
   font-size: 14px;
   font-weight: 300;
   font-family: "adelle", serif;
+  left: 386px;
 }
 #today {
   background-repeat: no-repeat;
@@ -252,24 +253,19 @@ nav li a:hover {
   }
 }
 #yr2014 {
-  left: 386px;
-  top: calc(52px);
+  top: 177.7px;
 }
 #yr2012 {
-  left: 386px;
-  top: 192px;
+  top: 352.9px;
 }
 #yr2010 {
-  left: 387px;
-  top: 368px;
+  top: 528.1px;
 }
 #yr2008 {
-  left: 387px;
-  top: 543px;
+  top: 703.3px;
 }
 #yr2006 {
-  left: 386px;
-  top: 718px;
+  top: 878.5px;
 }
 /* ### */
 .line {
@@ -786,4 +782,5 @@ h4 {
 i {
   font-style: italic;
 }
+
 /*# sourceMappingURL=style.css.map */
