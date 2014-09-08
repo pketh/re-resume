@@ -388,6 +388,10 @@ nav li a:hover {
   margin-top: -20px;
   left: 26%;
 }
+#boxtext-freshbooks {
+  top: 30%;
+  left: 17%;
+}
 #boxtext-wishabi {
   top: 32%;
 }
@@ -508,18 +512,17 @@ nav li a:hover {
 #laycon:hover #description-laycon,
 #freelance:hover #location7,
 #freelance:hover #description-freelance,
-#cust:hover #location8,
-#cust:hover #description8 {
+.freshbooks:hover #location-freshbooks,
+.freshbooks:hover #description-freshbooks {
   left: 32px;
 }
 #cui:hover #point-cui,
 #wishabi:hover #point-wishabi,
 #bibliocommons:hover #point-bibliocommons,
-.freshbooks:hover .points,
 #ta:hover #point-ta,
 #laycon:hover #point-laycon,
 #freelance:hover #point-freelance,
-#cust:hover #point8 {
+.freshbooks:hover #point-freshbrooks {
   left: 214px;
 }
 #bibliocommons:hover #box-bibliocommons {
@@ -575,10 +578,10 @@ nav li a:hover {
 #location7,
 #description-freelance,
 #point-freelance,
-#box-cust,
-#location8,
-#description8,
-#point8 {
+#box-freshbooks,
+#location-freshbooks,
+#description-freshbooks,
+#point-freshbrooks {
   -webkit-transition: all .3s ;
           transition: all .3s ;
 }
@@ -783,4 +786,5 @@ h4 {
 i {
   font-style: italic;
 }
+
 /*# sourceMappingURL=style.css.map */
