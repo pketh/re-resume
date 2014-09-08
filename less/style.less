@@ -5,17 +5,22 @@
 @twoYear: @month * 24;
 @top: 60px;
 
+@darkgreen: #0CBC73;
 @green: #09C778;
+
+@darkpurple: #6650D3;
 @purple: #7660e5;
 
-@currentMonthNum: 9;
+@currentMonthNum: 10;
 @fromToday: (@currentMonthNum * @month) + @top;
-@2014: @top + @fromToday;
+@2014: @fromToday;
 @2012: @2014 + @twoYear;
 @2010: @2012 + @twoYear;
 @2008: @2010 + @twoYear;
 @2006: @2008 + @twoYear;
 @legendTextOffset: 8px;
+
+@leftbox: 240px;
 
 body {
 	width:800px;
@@ -93,12 +98,12 @@ nav li a:hover {
 }
 
 /* ## */
-#bubbles {
+.bubbles-container {
 	padding-top: 3px;
 	font-family: "proxima-nova",sans-serif;
 }
 
-#bubbles li {
+.bubbles-container li {
 	display: inline-block;
 	list-style-type: none;
 	background-repeat: no-repeat;
@@ -110,17 +115,18 @@ nav li a:hover {
 	font-size: 16px;
 }
 
-#work {
-	margin-left: 258px;
-	padding-left: 19px;
-	padding-top: 5px;
+.bubble {
+	padding-top: 6px;
 }
 
+.bubble-work {
+	margin-left: 258px;
+	padding-left: 19px;
+}
 
-#school{
+.bubble-school {
 	margin-left: 117px;
 	padding-left: 14px;
-	padding-top: 5px;
 }
 
 /* ## */
@@ -140,12 +146,13 @@ nav li a:hover {
 	width: 15px;
 	height: 25px;
 	left: 392px;
-	animation:today_anim 1.0s ease-in;
+	animation:today_anim 1.3s ease-in;
 }
 
 @keyframes today_anim {
 	0% {top:0px;}
-	80% {top: 48px}
+	30% {top: 0px;}
+	85% {top: 46px;}
 	100% {top: 43px;}
 }
 
@@ -219,7 +226,7 @@ nav li a:hover {
 	border-radius: 3px;
 	left: 445px;
 	vertical-align: middle;
-	background-color: #6650D3;
+	background-color: @darkgreen;
 }
 
 .boxestext {
@@ -232,76 +239,81 @@ nav li a:hover {
 #box-ryerson {
 	top: @2012 + (@month * 8);
 	height: 204px;
+	background-color: @darkpurple;
 }
 
 #box-uoft {
-	background-color: #0CBC73;
 	top: @2008;
 	height: @twoYear + 1;
-
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
 
 #box-freshbooks {
-	height: 44px;
-	left: 240px;
-	top: 300px;
-	background-color: #0CBC73
-}
-
-#box-bibliocommons {
-	height: 46px;
-	left: 240px;
+	height: @year + (@month * 1);
+	left: @leftbox;
 	top: @top;
-	background-color: #0CBC73;
+
 	border-radius: 0;
 }
 
+#box-bibliocommons {
+	height: @month * 7;
+	left: @leftbox;
+	top: @2014 + (@month * 3);
+	border-radius: 0;
+		background-color: @darkpurple;
+
+}
+
 #box-wishabi {
-	height: 168px;
-	left: 240px;
-	top: 106px;
+	height: @month * 23;
+	left: @leftbox;
+
+	top: @2014 + (@month * 10);
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 }
 
 #box-cui {
-	height: 44px;
-	left: 240px;
-	top: 300px;
-	background-color: #0CBC73
+	height: @month * 6;
+	left: @leftbox;
+	top: @2012 + (@month * 14);
+		background-color: @darkpurple;
+
 }
 
 #box-ta {
-	left: 240px;
-	top: 360px;
-	height: 86px;
+	left: @leftbox;
+	top: @2010 - (@month * 2);
+	height: @year + 1;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
+
 }
 
 #box-laycon {
-	left: 240px;
-	top: 446px;
-	height: 105px;
-	background-color: #0CBC73;
+	left: @leftbox;
+	top: @2010 + (@month * 10);
+	height: @month * 14;
 	border-radius: 0px;
+		background-color: @darkpurple;
+
 }
 
 #box-freelance {
-	left: 240px;
-	top: 551px;
-	height: 86px;
+	left: @leftbox;
+	top: @2008;
+	height: @year;
 	border-radius: 0px;
 }
 
 #box-cust {
-	left: 240px;
-	top: 637px;
-	height: 89px;
-	background-color: #0CBC73;
+	left: @leftbox;
+	top: @2008 + @year;
+	height: @year + 1;
 	border-radius: 0px;
+	background-color: @darkpurple;
 }
 
 
@@ -315,7 +327,7 @@ nav li a:hover {
 }
 
 #boxtext-freshbooks {
-	top: 30%;
+	top: 26%;
 	left: 17%;
 }
 
@@ -353,30 +365,42 @@ nav li a:hover {
 }
 
 
-.boxgrads {
+.boxgrad {
 	height: 21px;
 	width: 113px;
 	position: absolute;
 	left: 445px;
-	background-image: url('../img/grad1.svg');
+	background-image: url('../img/boxgrad-green-bottom.svg');
 	background-repeat: no-repeat;
 }
 
-#boxgrad1 {
+.boxgrad-top {
+	background-image: url('../img/boxgrad-green-top.svg');
+	height: 18px;
+	top: @top - 10;
+}
+
+.boxgrad-purple-top {
+	background-image: url('../img/boxgrad-purple-top.svg');
+	height: 18px;
+	top: @top - 10;
+}
+
+.boxgrad-purple-bottom {
+	background-image: url('../img/boxgrad-purple-bottom.svg');
+}
+
+.boxgrad-bottom-school {
 	top: @2006;
 }
 
-#boxgrad2 {
-	background-image: url('../img/grad1-2.svg');
-	background-repeat: no-repeat;
-	height: 18px;
-	top: 50px;
-	left: 240px;
+.boxgrad-work-top {
+	left: @leftbox;
 }
 
-#boxgrad3 {
-	top: 726px;
-	left: 240px;
+.boxgrad-work-bottom {
+	top: @2006;
+	left: @leftbox;
 }
 
 
@@ -427,23 +451,18 @@ nav li a:hover {
 }
 
 /* BOX TRANSITIONS */
-/* RIGHT SIDE */
-#ryerson:hover #box-ryerson {
-	background-color: @purple
-}
-#ryerson:hover #location-ryerson, #ryerson:hover #description-ryerson, #uoft:hover #location-uoft, #uoft:hover #description-uoft {left: 585px}
-#ryerson:hover #point-ryerson, #uoft:hover #point-uoft {
-	left: 576px
+#ryerson:hover #location-ryerson,
+#ryerson:hover #description-ryerson,
+#uoft:hover #location-uoft,
+#uoft:hover #description-uoft {
+	left: 585px;
 }
 
-#uoft:hover #box-uoft {
-	background-color: @green
+#ryerson:hover #point-ryerson,
+#uoft:hover #point-uoft {
+	left: 576px;
 }
 
-/* LEFT SIDE */
-#wishabi:hover #box-wishabi {
-	background-color: @purple
-}
 #wishabi:hover #location-wishabi, #wishabi:hover #description-wishabi,
 #bibliocommons:hover #location-bibliocommons, #bibliocommons:hover #description-bibliocommons,
 .freshbooks:hover .locations, .freshbooks:hover .descriptions,
@@ -452,7 +471,7 @@ nav li a:hover {
 #laycon:hover #location-laycon, #laycon:hover #description-laycon,
 #freelance:hover #location7, #freelance:hover #description-freelance,
 .freshbooks:hover #location-freshbooks, .freshbooks:hover #description-freshbooks {
-	left: 32px
+	left: 32px;
 }
 
 #cui:hover #point-cui,
@@ -462,27 +481,26 @@ nav li a:hover {
 #laycon:hover #point-laycon,
 #freelance:hover #point-freelance,
 .freshbooks:hover #point-freshbrooks {
-	left: 214px
+	left: 214px;
 }
 
-#bibliocommons:hover #box-bibliocommons {background-color: @green}
-.freshbooks:hover .boxes {background-color: @green}
-#cui:hover #box-cui {background-color: @green}
-#ta:hover #box-ta {background-color: @purple}
-#laycon:hover #box-laycon {background-color: @green}
-#freelance:hover #box-freelance {background-color: @purple}
-#cust:hover #box-cust {background-color: @green}
+#ryerson:hover #box-ryerson,
+#bibliocommons:hover #box-bibliocommons,
+#cui:hover #box-cui,
+#laycon:hover #box-laycon,
+#cust:hover #box-cust {
+	background-color: @purple;
+}
 
+#uoft:hover #box-uoft,
+.freshbooks:hover #box-freshbooks,
+#wishabi:hover #box-wishabi,
+#ta:hover #box-ta,
+#freelance:hover #box-freelance {
+	background-color: @green;
+}
 
-#box-ryerson, #location-ryerson, #description-ryerson, #point-ryerson,
-#box-uoft, #location-uoft, #description-uoft, #point-uoft,
-#box-wishabi, #location-wishabi, #description-wishabi, #point-wishabi,
-#box-bibliocommons, #location-bibliocommons, #description-bibliocommons, #point-bibliocommons,
-#box-cui, #location-cui, #description-cui, #point-cui,
-#box-ta, #location-ta, #description-ta, #point-ta,
-#box-laycon, #location-laycon, #description-laycon, #point-laycon,
-#box-freelance, #location7, #description-freelance, #point-freelance,
-#box-freshbooks, #location-freshbooks, #description-freshbooks, #point-freshbrooks {
+.boxes, .locations, .points, .descriptions {
 	transition: all .3s ;
 }
 
