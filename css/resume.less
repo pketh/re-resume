@@ -1,0 +1,326 @@
+@import (less) "reset.css";
+
+@month: 7.3px; // (175 / 24)
+@year: @month * 12;
+@twoYear: @month * 24;
+@top: 60px;
+
+@darkgreen: #0CBC73;
+@green: #09C778;
+
+@darkpurple: #6650D3;
+@purple: #7660e5;
+
+@currentMonthNum: 10;
+@fromToday: (@currentMonthNum * @month) + @top;
+@2014: @fromToday;
+@2012: @2014 + @twoYear;
+@2010: @2012 + @twoYear;
+@2008: @2010 + @twoYear;
+@2006: @2008 + @twoYear;
+@legendTextOffset: 8px;
+
+@leftbox: 240px;
+
+body {
+	width:800px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	color: #222;
+}
+
+.pketh {
+	position: absolute;
+	background-image: url('../img/pketh.svg');
+	height: 27px;
+	width: 81px;
+	right: 0px;
+	top: -20px;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+header {
+	margin-top: 61px;
+}
+
+h1 {
+	font-size: 43px;
+	font-weight: 700;
+	font-family: "adelle",serif;
+	color: #111;
+}
+
+h2 {
+	font-size: 43px;
+	font-weight: 400;
+	font-family: "proxima-nova",sans-serif;
+	margin-top: 36px;
+	line-height: 49px;
+	margin-bottom: 41px;
+}
+
+
+li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav {
+	margin-bottom: 66px;
+	font-family: "adelle", serif;
+}
+
+nav li {
+	padding-right: 26px;
+}
+
+nav li a {
+	text-decoration: underline;
+	font-size: 24px;
+	font-weight: 400;
+	color: #222;
+	transition: all .3s ;
+}
+
+nav li a:hover {
+	color: #6B82D2;
+}
+
+#experience {
+	position: relative;
+	height: 835px;
+	margin-bottom: 114px;
+}
+
+.bubbles-container {
+	padding-top: 3px;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.bubbles-container li {
+	display: inline-block;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-image: url('../img/bubble.svg');
+	width: 65px;
+	height: 40px;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.bubble {
+	padding-top: 6px;
+}
+
+.bubble-work {
+	margin-left: 258px;
+	padding-left: 19px;
+}
+
+.bubble-school {
+	margin-left: 117px;
+	padding-left: 14px;
+}
+
+.legend {
+	position: absolute;
+	color: #aaaaaa;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: "adelle",serif;
+	left: 386px;
+}
+
+#today {
+	background-repeat: no-repeat;
+	background-image: url('../img/today.svg');
+	width: 15px;
+	height: 25px;
+	left: 392px;
+	animation:today_anim 1.3s ease-in;
+}
+
+@keyframes today_anim {
+	0% {top:0px;}
+	30% {top: 0px;}
+	85% {top: 46px;}
+	100% {top: 43px;}
+}
+
+#yr2014 {
+	top: @2014 - @legendTextOffset;
+}
+
+#yr2012 {
+	top: @2012 - @legendTextOffset;
+}
+
+#yr2010 {
+	top: @2010 - @legendTextOffset;
+}
+
+#yr2008 {
+	top: @2008 - @legendTextOffset;
+}
+
+#yr2006 {
+	top: @2006 - @legendTextOffset;
+}
+
+.line {
+	position: absolute;
+	background-color: #E6E6E6;
+	width: 377px;
+	height: 1px;
+}
+
+.line-right {
+	left: 421px;
+}
+
+.line-today {
+	top: @top;
+}
+
+.line-2014 {
+	top: @2014;
+}
+
+.line-2012 {
+	top: @2012;
+}
+
+.line-2010 {
+	top: @2010;
+}
+
+.line-2008 {
+	top: @2008;
+}
+
+.line-2006 {
+	top: @2006;
+}
+
+.boxes {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	font-family: "proxima-nova",sans-serif;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 1px 0px rgba(2,2,2,0.54);
+	position: absolute;
+	width: 113px;
+	border-radius: 3px;
+	left: 445px;
+	vertical-align: middle;
+	background-color: @darkgreen;
+}
+
+.boxestext {
+	position: absolute;
+	top:50%;
+	left: 22%;
+}
+
+.descriptions {
+	font-family: 'adelle', serif;
+	color: #555D53;
+	font-size: 12px;
+	line-height: 18px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 154px;
+	left: 598px;
+	background-color: #CFE8CB;
+	position: absolute;
+}
+
+.locations {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #222;
+	font-weight: 400;
+	position: absolute;
+	left: 598px;
+}
+
+.points {
+	background-image: url('../img/point.svg');
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: absolute;
+	height: 17px;
+	width: 9px;
+}
+
+.points-work {
+	background-image: url('../img/point-work.svg');
+}
+
+.underlined {
+	font-family: "adelle", serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+/****************************************
+* Box Gradients
+****************************************/
+
+.boxgrad {
+	height: 21px;
+	width: 113px;
+	position: absolute;
+	left: 445px;
+	background-image: url('../img/boxgrad-green-bottom.svg');
+	background-repeat: no-repeat;
+}
+
+.boxgrad-top {
+	background-image: url('../img/boxgrad-green-top.svg');
+	height: 18px;
+	top: @top - 10;
+}
+
+.boxgrad-purple-top {
+	background-image: url('../img/boxgrad-purple-top.svg');
+	height: 18px;
+	top: @top - 10;
+}
+
+.boxgrad-purple-bottom {
+	background-image: url('../img/boxgrad-purple-bottom.svg');
+}
+
+.boxgrad-bottom-school {
+	top: @2006;
+}
+
+.boxgrad-work-top {
+	left: @leftbox;
+}
+
+.boxgrad-work-bottom {
+	top: @2006;
+	left: @leftbox;
+}
+
+
+@import 'experience.less';
+
+@import 'skills.less';
+
+@import 'footer.less';
+
+@import 'interactions.less';

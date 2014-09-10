@@ -139,11 +139,9 @@ body {
   background-repeat: no-repeat;
   display: none;
 }
-/* # */
 header {
   margin-top: 61px;
 }
-/* ## */
 h1 {
   font-size: 43px;
   font-weight: 700;
@@ -174,19 +172,16 @@ nav li a {
   font-size: 24px;
   font-weight: 400;
   color: #222;
-  -webkit-transition: all .3s ;
-          transition: all .3s ;
+  transition: all .3s ;
 }
 nav li a:hover {
   color: #6B82D2;
 }
-/* # */
 #experience {
   position: relative;
   height: 835px;
   margin-bottom: 114px;
 }
-/* ## */
 .bubbles-container {
   padding-top: 3px;
   font-family: "proxima-nova", sans-serif;
@@ -213,8 +208,6 @@ nav li a:hover {
   margin-left: 117px;
   padding-left: 14px;
 }
-/* ## */
-/* ### */
 .legend {
   position: absolute;
   color: #aaaaaa;
@@ -229,22 +222,7 @@ nav li a:hover {
   width: 15px;
   height: 25px;
   left: 392px;
-  -webkit-animation: today_anim 1.3s ease-in;
-          animation: today_anim 1.3s ease-in;
-}
-@-webkit-keyframes today_anim {
-  0% {
-    top: 0px;
-  }
-  30% {
-    top: 0px;
-  }
-  85% {
-    top: 46px;
-  }
-  100% {
-    top: 43px;
-  }
+  animation: today_anim 1.3s ease-in;
 }
 @keyframes today_anim {
   0% {
@@ -275,7 +253,6 @@ nav li a:hover {
 #yr2006 {
   top: 825.8px;
 }
-/* ### */
 .line {
   position: absolute;
   background-color: #E6E6E6;
@@ -303,7 +280,6 @@ nav li a:hover {
 .line-2006 {
   top: 833.8px;
 }
-/* ### */
 .boxes {
   font-size: 16px;
   line-height: 20px;
@@ -324,107 +300,51 @@ nav li a:hover {
   top: 50%;
   left: 22%;
 }
-#box-ryerson {
-  top: 366.6px;
-  height: 204px;
-  background-color: #6650d3;
+.descriptions {
+  font-family: 'adelle', serif;
+  color: #555D53;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 154px;
+  left: 598px;
+  background-color: #CFE8CB;
+  position: absolute;
 }
-#box-uoft {
-  top: 658.6px;
-  height: 176.2px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+.locations {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+  font-weight: 400;
+  position: absolute;
+  left: 598px;
 }
-#box-freshbooks {
-  height: 94.9px;
-  left: 240px;
-  top: 60px;
-  border-radius: 0;
+.points {
+  background-image: url('../img/point.svg');
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  height: 17px;
+  width: 9px;
 }
-#box-bibliocommons {
-  height: 51.1px;
-  left: 240px;
-  top: 154.9px;
-  border-radius: 0;
-  background-color: #6650d3;
+.points-work {
+  background-image: url('../img/point-work.svg');
 }
-#box-wishabi {
-  height: 167.9px;
-  left: 240px;
-  top: 206px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+.underlined {
+  font-family: "adelle", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
 }
-#box-cui {
-  height: 43.8px;
-  left: 240px;
-  top: 410.4px;
-  background-color: #6650d3;
-}
-#box-ta {
-  left: 240px;
-  top: 468.8px;
-  height: 88.6px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-#box-laycon {
-  left: 240px;
-  top: 556.4px;
-  height: 102.2px;
-  border-radius: 0px;
-  background-color: #6650d3;
-}
-#box-freelance {
-  left: 240px;
-  top: 658.6px;
-  height: 87.6px;
-  border-radius: 0px;
-}
-#box-cust {
-  left: 240px;
-  top: 746.2px;
-  height: 88.6px;
-  border-radius: 0px;
-  background-color: #6650d3;
-}
-#boxtext-ryerson {
-  margin-top: -30px;
-}
-#boxtext-uoft {
-  margin-top: -20px;
-  left: 26%;
-}
-#boxtext-freshbooks {
-  top: 26%;
-  left: 17%;
-}
-#boxtext-wishabi {
-  top: 32%;
-}
-#boxtext-bibliocommons {
-  top: 28%;
-}
-#boxtext-cui {
-  top: 30%;
-  left: 15%;
-}
-#boxtext-ta {
-  top: 27%;
-  left: 21%;
-}
-#boxtext-laycon {
-  top: 30%;
-  left: 8%;
-}
-#boxtext-freelance {
-  top: 30%;
-  left: 17%;
-}
-#boxtext-cust {
-  top: 30%;
-  left: 18%;
-}
+/****************************************
+* Box Gradients
+****************************************/
 .boxgrad {
   height: 21px;
   width: 113px;
@@ -456,43 +376,324 @@ nav li a:hover {
   top: 833.8px;
   left: 240px;
 }
-/* ### */
-.locations {
-  font-family: "proxima-nova", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #222;
-  font-weight: 400;
-  position: absolute;
-  left: 598px;
+/****************************************
+* Ryerson University
+****************************************/
+#box-ryerson {
+  top: 366.6px;
+  height: 204px;
+  background-color: #6650d3;
+}
+#boxtext-ryerson {
+  margin-top: -30px;
 }
 #location-ryerson {
   top: 305px;
 }
+#point-ryerson {
+  left: 589px;
+  top: 354px;
+}
+#description-ryerson {
+  top: 329px;
+}
+/****************************************
+* University of Toronto
+****************************************/
+#box-uoft {
+  top: 658.6px;
+  height: 176.2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#boxtext-uoft {
+  margin-top: -20px;
+  left: 26%;
+}
 #location-uoft {
   top: 578px;
 }
-#location-wishabi {
+#description-uoft {
+  top: 601px;
+}
+#point-uoft {
+  left: 589px;
+  top: 637px;
+}
+/****************************************
+* FreshBooks
+****************************************/
+#box-freshbooks {
+  height: 94.9px;
+  left: 240px;
+  top: 60px;
+  border-radius: 0;
+}
+#boxtext-freshbooks {
+  top: 26%;
+  left: 17%;
+}
+#description-freshbooks {
   left: 18px;
-  top: 144px;
+}
+/****************************************
+* Bibliocommons
+****************************************/
+#box-bibliocommons {
+  height: 51.1px;
+  left: 240px;
+  top: 154.9px;
+  border-radius: 0;
+  background-color: #6650d3;
+}
+#boxtext-bibliocommons {
+  top: 28%;
 }
 #location-bibliocommons {
   left: 18px;
   top: 35px;
 }
+#description-bibliocommons {
+  left: 18px;
+  top: 58px;
+}
+#point-bibliocommons {
+  left: 200px;
+  top: 74px;
+}
+/****************************************
+* Wishabi
+****************************************/
+#box-wishabi {
+  height: 167.9px;
+  left: 240px;
+  top: 206px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#boxtext-wishabi {
+  top: 32%;
+}
+#location-wishabi {
+  left: 18px;
+  top: 144px;
+}
+#description-wishabi {
+  left: 18px;
+  top: 167px;
+}
+#point-wishabi {
+  left: 200px;
+  top: 193px;
+}
+/****************************************
+* Canadian Urban Institute
+****************************************/
+#box-cui {
+  height: 43.8px;
+  left: 240px;
+  top: 410.4px;
+  background-color: #6650d3;
+}
+#boxtext-cui {
+  top: 30%;
+  left: 15%;
+}
 #location-cui {
   left: 18px;
   top: 264px;
+}
+#description-cui {
+  left: 18px;
+  top: 288px;
+}
+#point-cui {
+  left: 200px;
+  top: 313px;
+}
+/****************************************
+* Teaching Assistant
+****************************************/
+#box-ta {
+  left: 240px;
+  top: 468.8px;
+  height: 88.6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#boxtext-ta {
+  top: 27%;
+  left: 21%;
 }
 #location-ta {
   left: 18px;
   top: 365px;
 }
+#description-ta {
+  left: 18px;
+  top: 388px;
+}
+#point-ta {
+  left: 200px;
+  top: 394px;
+}
+/****************************************
+* Laycon Construction
+****************************************/
+#box-laycon {
+  left: 240px;
+  top: 556.4px;
+  height: 102.2px;
+  border-radius: 0px;
+  background-color: #6650d3;
+}
+#boxtext-laycon {
+  top: 30%;
+  left: 8%;
+}
 #location-laycon {
   left: 18px;
   top: 452px;
 }
-/* BOX TRANSITIONS */
+#description-laycon {
+  left: 18px;
+  top: 476px;
+}
+#point-laycon {
+  left: 200px;
+  top: 491px;
+}
+/****************************************
+* Freelance Designer
+****************************************/
+#box-freelance {
+  left: 240px;
+  top: 658.6px;
+  height: 87.6px;
+  border-radius: 0px;
+}
+#boxtext-freelance {
+  top: 30%;
+  left: 17%;
+}
+#point-freelance {
+  left: 200px;
+  top: 586px;
+}
+#description-freelance {
+  left: 18px;
+  top: 570px;
+}
+/****************************************
+* Customer Service
+****************************************/
+#box-cust {
+  left: 240px;
+  top: 746.2px;
+  height: 88.6px;
+  border-radius: 0px;
+  background-color: #6650d3;
+}
+#boxtext-cust {
+  top: 30%;
+  left: 18%;
+}
+.col1 {
+  float: left;
+  width: 470px;
+}
+.col2 {
+  float: left;
+  padding-left: 40px;
+  width: 285px;
+}
+#skills_h2 {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+.skillsecs {
+  border-bottom: 1px #EFEFF0 solid;
+  border-left: 1px #fff solid;
+  border-right: 1px #fff solid;
+  border-top: 1px #fff solid;
+  padding-top: 25px;
+  transition: all .3s ;
+  height: 200px;
+}
+.skill-description {
+  font-family: "adelle", serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.skillbubbles li:hover,
+.skillbubbles-hover {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) !important;
+  background-color: #B8B8C8 !important;
+  color: #21213b !important;
+}
+.skillbubbles li,
+.skillbubble {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333132;
+  background-color: #EBEBEC;
+  display: inline-block;
+  padding: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  opacity: .8;
+  transition: all .2s ;
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.6);
+}
+h4 {
+  font-family: "adelle", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  display: block;
+}
+#current-location {
+  float: left;
+  margin-top: -5px;
+}
+#current-location img {
+  vertical-align: -35%;
+  width: 8px;
+  margin-right: 2px;
+}
+#footer {
+  clear: both;
+  font-family: "adelle", serif;
+  color: #888;
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+#footer a {
+  color: #333132;
+  text-decoration: underline;
+  transition: all .3s ;
+}
+#footer ul {
+  float: right;
+  margin-left: 125px;
+}
+#footer li {
+  padding-left: 35px;
+}
+#footer a:hover {
+  color: #6B82D2;
+}
+i {
+  font-style: italic;
+}
 #ryerson:hover #location-ryerson,
 #ryerson:hover #description-ryerson,
 #uoft:hover #location-uoft,
@@ -548,208 +749,5 @@ nav li a:hover {
 .locations,
 .points,
 .descriptions {
-  -webkit-transition: all .3s ;
-          transition: all .3s ;
+  transition: all .3s ;
 }
-/* ### */
-.descriptions {
-  font-family: 'adelle', serif;
-  color: #555D53;
-  font-size: 12px;
-  line-height: 18px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  width: 154px;
-  left: 598px;
-  background-color: #CFE8CB;
-  position: absolute;
-}
-.points {
-  background-image: url('../img/point.svg');
-  background-repeat: no-repeat;
-  z-index: 1;
-  position: absolute;
-  height: 17px;
-  width: 9px;
-}
-.points-work {
-  background-image: url('../img/point-work.svg');
-}
-#point-ryerson {
-  left: 589px;
-  top: 354px;
-}
-#point-uoft {
-  left: 589px;
-  top: 637px;
-}
-#point-wishabi {
-  left: 200px;
-  top: 193px;
-}
-#point-bibliocommons {
-  left: 200px;
-  top: 74px;
-}
-#point-cui {
-  left: 200px;
-  top: 313px;
-}
-#point-ta {
-  left: 200px;
-  top: 394px;
-}
-#point-laycon {
-  left: 200px;
-  top: 491px;
-}
-#point-freelance {
-  left: 200px;
-  top: 586px;
-}
-.underlined {
-  font-family: "adelle", serif;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: underline;
-}
-#description-ryerson {
-  top: 329px;
-}
-#description-uoft {
-  top: 601px;
-}
-#description-wishabi {
-  left: 18px;
-  top: 167px;
-}
-#description-bibliocommons {
-  left: 18px;
-  top: 58px;
-}
-#description-cui {
-  left: 18px;
-  top: 288px;
-}
-#description-ta {
-  left: 18px;
-  top: 388px;
-}
-#description-laycon {
-  left: 18px;
-  top: 476px;
-}
-#description-freelance {
-  left: 18px;
-  top: 570px;
-}
-/* # */
-#skills_h2 {
-  margin-bottom: 35px;
-  margin-top: 20px;
-}
-/* table {
-	width: 100%;
-}
- */
-.col1 {
-  float: left;
-  width: 470px;
-}
-.col2 {
-  float: left;
-  padding-left: 40px;
-  width: 285px;
-}
-.skillsecs {
-  border-bottom: 1px #EFEFF0 solid;
-  border-left: 1px #fff solid;
-  border-right: 1px #fff solid;
-  border-top: 1px #fff solid;
-  padding-top: 25px;
-  -webkit-transition: all .3s ;
-          transition: all .3s ;
-  height: 200px;
-}
-.skillbubbles li:hover,
-.skillbubbles-hover {
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) !important;
-  background-color: #B8B8C8 !important;
-  color: #21213b !important;
-}
-.skillbubbles li,
-.skillbubble {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #333132;
-  background-color: #EBEBEC;
-  display: inline-block;
-  padding: 7px;
-  padding-left: 14px;
-  padding-right: 14px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  opacity: .8;
-  -webkit-transition: all .2s ;
-          transition: all .2s ;
-  box-shadow: 0px 1px rgba(255, 255, 255, 0.6);
-}
-h4 {
-  font-family: "adelle", serif;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 13px;
-  display: block;
-}
-.description {
-  font-family: "adelle", serif;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 300;
-}
-/* # */
-#current-location {
-  float: left;
-  margin-top: -5px;
-}
-#current-location img {
-  vertical-align: -35%;
-  width: 8px;
-  margin-right: 2px;
-}
-#footer {
-  clear: both;
-  font-family: "adelle", serif;
-  color: #888;
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  float: right;
-  margin-bottom: 40px;
-  margin-top: 80px;
-}
-#footer a {
-  color: #333132;
-  text-decoration: underline;
-  -webkit-transition: all .3s ;
-          transition: all .3s ;
-}
-#footer ul {
-  float: right;
-  margin-left: 125px;
-}
-#footer li {
-  padding-left: 35px;
-}
-#footer a:hover {
-  color: #6B82D2;
-}
-i {
-  font-style: italic;
-}
-/*# sourceMappingURL=style.css.map */
