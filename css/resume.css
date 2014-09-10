@@ -172,7 +172,8 @@ nav li a {
   font-size: 24px;
   font-weight: 400;
   color: #222;
-  transition: all .3s ;
+  -webkit-transition: all .3s ;
+          transition: all .3s ;
 }
 nav li a:hover {
   color: #6B82D2;
@@ -222,7 +223,22 @@ nav li a:hover {
   width: 15px;
   height: 25px;
   left: 392px;
-  animation: today_anim 1.3s ease-in;
+  -webkit-animation: today_anim 1.3s ease-in;
+          animation: today_anim 1.3s ease-in;
+}
+@-webkit-keyframes today_anim {
+  0% {
+    top: 0px;
+  }
+  30% {
+    top: 0px;
+  }
+  85% {
+    top: 46px;
+  }
+  100% {
+    top: 43px;
+  }
 }
 @keyframes today_anim {
   0% {
@@ -617,7 +633,8 @@ nav li a:hover {
   border-right: 1px #fff solid;
   border-top: 1px #fff solid;
   padding-top: 25px;
-  transition: all .3s ;
+  -webkit-transition: all .3s ;
+          transition: all .3s ;
   height: 200px;
 }
 .skill-description {
@@ -646,7 +663,8 @@ nav li a:hover {
   margin-bottom: 10px;
   border-radius: 10px;
   opacity: .8;
-  transition: all .2s ;
+  -webkit-transition: all .2s ;
+          transition: all .2s ;
   box-shadow: 0px 1px rgba(255, 255, 255, 0.6);
 }
 h4 {
@@ -679,7 +697,8 @@ h4 {
 #footer a {
   color: #333132;
   text-decoration: underline;
-  transition: all .3s ;
+  -webkit-transition: all .3s ;
+          transition: all .3s ;
 }
 #footer ul {
   float: right;
@@ -749,5 +768,7 @@ i {
 .locations,
 .points,
 .descriptions {
-  transition: all .3s ;
+  -webkit-transition: all .3s ;
+          transition: all .3s ;
 }
+/*# sourceMappingURL=resume.css.map */
