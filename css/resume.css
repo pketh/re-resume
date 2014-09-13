@@ -176,7 +176,7 @@ nav li a {
           transition: all .3s ;
 }
 nav li a:hover {
-  color: #6B82D2;
+  color: #1daeeb;
 }
 #experience {
   position: relative;
@@ -629,8 +629,8 @@ nav li a:hover {
 }
 .col2 {
   float: left;
-  padding-left: 40px;
-  width: 285px;
+  padding-left: 70px;
+  width: 235px;
 }
 #skills_h2 {
   margin-bottom: 35px;
@@ -642,6 +642,7 @@ nav li a:hover {
   border-right: 1px #fff solid;
   border-top: 1px #fff solid;
   padding-top: 25px;
+  padding-left: 15px;
   -webkit-transition: all .3s ;
           transition: all .3s ;
   height: 200px;
@@ -717,7 +718,7 @@ h4 {
   padding-left: 35px;
 }
 #footer a:hover {
-  color: #6B82D2;
+  color: #1daeeb;
 }
 i {
   font-style: italic;
