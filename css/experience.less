@@ -1,3 +1,6 @@
+@right-side-point: 589px;
+@left-side-point: 200px;
+
 /****************************************
 * Ryerson University
 ****************************************/
@@ -12,17 +15,19 @@
 	margin-top: -30px;
 }
 
+@ryerson-info: @2012 + @year;
+
 #location-ryerson {
-	top: 305px;
+	top: @ryerson-info + 16.2;
 }
 
 #point-ryerson{
-	left: 589px;
-	top: 354px;
+	left: @right-side-point;
+	top: @ryerson-info + 65;
 }
 
 #description-ryerson {
-	top: 329px;
+	top: @ryerson-info + 40;
 }
 
 /****************************************
@@ -41,17 +46,19 @@
 	left: 26%;
 }
 
+@uoft-info: @2008 + (@month * 6);
+
 #location-uoft {
-	top: 578px;
+	top: @uoft-info - 20.4;
 }
 
 #description-uoft {
-	top: 601px;
+	top: @uoft-info + 3;
 }
 
 #point-uoft {
-	left: 589px;
-	top: 637px;
+	left: @right-side-point;
+	top: @uoft-info + 34.6;
 }
 
 /****************************************
@@ -110,7 +117,7 @@
 }
 
 #point-bibliocommons {
-	left: 200px;
+	left: @left-side-point;
 	top: 74px;
 }
 
@@ -141,7 +148,7 @@
 }
 
 #point-wishabi {
-	left: 200px;
+	left: @left-side-point;
 	top: 193px;
 }
 
@@ -172,7 +179,7 @@
 }
 
 #point-cui {
-	left: 200px;
+	left: @left-side-point;
 	top: 313px;
 }
 
@@ -204,7 +211,7 @@
 }
 
 #point-ta {
-	left: 200px;
+	left: @left-side-point;
 	top: 394px;
 }
 
@@ -236,7 +243,7 @@
 }
 
 #point-laycon {
-	left: 200px;
+	left: @left-side-point;
 	top: 491px;
 }
 
@@ -257,7 +264,7 @@
 }
 
 #point-freelance {
-	left: 200px;
+	left: @left-side-point;
 	top: 586px;
 }
 

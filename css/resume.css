@@ -404,14 +404,14 @@ nav li a:hover {
   margin-top: -30px;
 }
 #location-ryerson {
-  top: 305px;
+  top: 412px;
 }
 #point-ryerson {
   left: 589px;
-  top: 354px;
+  top: 460.8px;
 }
 #description-ryerson {
-  top: 329px;
+  top: 435.8px;
 }
 /****************************************
 * University of Toronto
@@ -427,14 +427,14 @@ nav li a:hover {
   left: 26%;
 }
 #location-uoft {
-  top: 578px;
+  top: 682px;
 }
 #description-uoft {
-  top: 601px;
+  top: 705.4px;
 }
 #point-uoft {
   left: 589px;
-  top: 637px;
+  top: 737px;
 }
 /****************************************
 * FreshBooks
