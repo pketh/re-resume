@@ -628,9 +628,12 @@ nav li a:hover {
   width: 470px;
 }
 .col2 {
+  margin-top: 15px;
   float: left;
   padding-left: 70px;
   width: 235px;
+  -webkit-transition: all .3s ;
+          transition: all .3s ;
 }
 #skills_h2 {
   margin-bottom: 35px;
@@ -780,5 +783,11 @@ i {
 .descriptions {
   -webkit-transition: all .3s ;
           transition: all .3s ;
+}
+#research:hover .col2,
+#interaction:hover .col2,
+#visual:hover .col2,
+#implementation:hover .col2 {
+  padding-left: 55px;
 }
 /*# sourceMappingURL=resume.css.map */
