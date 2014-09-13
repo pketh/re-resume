@@ -255,19 +255,19 @@ nav li a:hover {
   }
 }
 #yr2014 {
-  top: 125px;
+  top: 139.6px;
 }
 #yr2012 {
-  top: 300.2px;
+  top: 314.8px;
 }
 #yr2010 {
-  top: 475.4px;
+  top: 490px;
 }
 #yr2008 {
-  top: 650.6px;
+  top: 665.2px;
 }
 #yr2006 {
-  top: 825.8px;
+  top: 840.4px;
 }
 .line {
   position: absolute;
@@ -282,19 +282,19 @@ nav li a:hover {
   top: 60px;
 }
 .line-2014 {
-  top: 133px;
+  top: 147.6px;
 }
 .line-2012 {
-  top: 308.2px;
+  top: 322.8px;
 }
 .line-2010 {
-  top: 483.4px;
+  top: 498px;
 }
 .line-2008 {
-  top: 658.6px;
+  top: 673.2px;
 }
 .line-2006 {
-  top: 833.8px;
+  top: 848.4px;
 }
 .boxes {
   font-size: 16px;
@@ -317,7 +317,7 @@ nav li a:hover {
   left: 22%;
 }
 .descriptions {
-  font-family: 'adelle', serif;
+  font-family: "adelle", serif;
   color: #555D53;
   font-size: 12px;
   line-height: 18px;
@@ -383,20 +383,20 @@ nav li a:hover {
   background-image: url('../img/boxgrad-purple-bottom.svg');
 }
 .boxgrad-bottom-school {
-  top: 833.8px;
+  top: 848.4px;
 }
 .boxgrad-work-top {
   left: 240px;
 }
 .boxgrad-work-bottom {
-  top: 833.8px;
+  top: 848.4px;
   left: 240px;
 }
 /****************************************
 * Ryerson University
 ****************************************/
 #box-ryerson {
-  top: 366.6px;
+  top: 381.2px;
   height: 204px;
   background-color: #6650d3;
 }
@@ -404,20 +404,20 @@ nav li a:hover {
   margin-top: -30px;
 }
 #location-ryerson {
-  top: 412px;
+  top: 426.6px;
 }
 #point-ryerson {
   left: 589px;
-  top: 460.8px;
+  top: 475.4px;
 }
 #description-ryerson {
-  top: 435.8px;
+  top: 450.4px;
 }
 /****************************************
 * University of Toronto
 ****************************************/
 #box-uoft {
-  top: 658.6px;
+  top: 673.2px;
   height: 176.2px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -427,20 +427,20 @@ nav li a:hover {
   left: 26%;
 }
 #location-uoft {
-  top: 682px;
+  top: 696.6px;
 }
 #description-uoft {
-  top: 705.4px;
+  top: 720px;
 }
 #point-uoft {
   left: 589px;
-  top: 737px;
+  top: 751.6px;
 }
 /****************************************
 * FreshBooks
 ****************************************/
 #box-freshbooks {
-  height: 94.9px;
+  height: 109.5px;
   left: 240px;
   top: 60px;
   border-radius: 0;
@@ -449,8 +449,17 @@ nav li a:hover {
   top: 26%;
   left: 17%;
 }
+#location-freshbooks {
+  left: 18px;
+  top: 53px;
+}
 #description-freshbooks {
   left: 18px;
+  top: 76px;
+}
+#point-freshbooks {
+  left: 200px;
+  top: 92px;
 }
 /****************************************
 * Bibliocommons
@@ -458,7 +467,7 @@ nav li a:hover {
 #box-bibliocommons {
   height: 51.1px;
   left: 240px;
-  top: 154.9px;
+  top: 169.5px;
   border-radius: 0;
   background-color: #6650d3;
 }
@@ -467,15 +476,15 @@ nav li a:hover {
 }
 #location-bibliocommons {
   left: 18px;
-  top: 35px;
+  top: 147.6px;
 }
 #description-bibliocommons {
   left: 18px;
-  top: 58px;
+  top: 170.6px;
 }
 #point-bibliocommons {
   left: 200px;
-  top: 74px;
+  top: 186.6px;
 }
 /****************************************
 * Wishabi
@@ -483,7 +492,7 @@ nav li a:hover {
 #box-wishabi {
   height: 167.9px;
   left: 240px;
-  top: 206px;
+  top: 220.6px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -492,15 +501,15 @@ nav li a:hover {
 }
 #location-wishabi {
   left: 18px;
-  top: 144px;
+  top: 246.4px;
 }
 #description-wishabi {
   left: 18px;
-  top: 167px;
+  top: 269.4px;
 }
 #point-wishabi {
   left: 200px;
-  top: 193px;
+  top: 295.4px;
 }
 /****************************************
 * Canadian Urban Institute
@@ -508,7 +517,7 @@ nav li a:hover {
 #box-cui {
   height: 43.8px;
   left: 240px;
-  top: 410.4px;
+  top: 425px;
   background-color: #6650d3;
 }
 #boxtext-cui {
@@ -517,22 +526,22 @@ nav li a:hover {
 }
 #location-cui {
   left: 18px;
-  top: 264px;
+  top: 389.2px;
 }
 #description-cui {
   left: 18px;
-  top: 288px;
+  top: 413.2px;
 }
 #point-cui {
   left: 200px;
-  top: 313px;
+  top: 438.2px;
 }
 /****************************************
 * Teaching Assistant
 ****************************************/
 #box-ta {
   left: 240px;
-  top: 468.8px;
+  top: 483.4px;
   height: 88.6px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -543,22 +552,22 @@ nav li a:hover {
 }
 #location-ta {
   left: 18px;
-  top: 365px;
+  top: 491px;
 }
 #description-ta {
   left: 18px;
-  top: 388px;
+  top: 514px;
 }
 #point-ta {
   left: 200px;
-  top: 394px;
+  top: 520px;
 }
 /****************************************
 * Laycon Construction
 ****************************************/
 #box-laycon {
   left: 240px;
-  top: 556.4px;
+  top: 571px;
   height: 102.2px;
   border-radius: 0px;
   background-color: #6650d3;
@@ -569,22 +578,22 @@ nav li a:hover {
 }
 #location-laycon {
   left: 18px;
-  top: 452px;
+  top: 575.6px;
 }
 #description-laycon {
   left: 18px;
-  top: 476px;
+  top: 599.6px;
 }
 #point-laycon {
   left: 200px;
-  top: 491px;
+  top: 614.6px;
 }
 /****************************************
 * Freelance Designer
 ****************************************/
 #box-freelance {
   left: 240px;
-  top: 658.6px;
+  top: 673.2px;
   height: 87.6px;
   border-radius: 0px;
 }
@@ -594,18 +603,18 @@ nav li a:hover {
 }
 #point-freelance {
   left: 200px;
-  top: 586px;
+  top: 709.2px;
 }
 #description-freelance {
   left: 18px;
-  top: 570px;
+  top: 693.2px;
 }
 /****************************************
 * Customer Service
 ****************************************/
 #box-cust {
   left: 240px;
-  top: 746.2px;
+  top: 760.8px;
   height: 88.6px;
   border-radius: 0px;
   background-color: #6650d3;
@@ -747,7 +756,7 @@ i {
 #ta:hover #point-ta,
 #laycon:hover #point-laycon,
 #freelance:hover #point-freelance,
-.freshbooks:hover #point-freshbrooks {
+.freshbooks:hover #point-freshbooks {
   left: 214px;
 }
 #ryerson:hover #box-ryerson,

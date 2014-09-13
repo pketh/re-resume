@@ -1,5 +1,6 @@
 @right-side-point: 589px;
 @left-side-point: 200px;
+@left-side-info: 18px;
 
 /****************************************
 * Ryerson University
@@ -66,7 +67,7 @@
 ****************************************/
 
 #box-freshbooks {
-	height: @year + (@month * 1);
+	height: @year + (@month * 3);
 	left: @leftbox;
 	top: @top;
 
@@ -78,16 +79,21 @@
 	left: 17%;
 }
 
+@freshbooks-info: @2014 - @year + 16;
+
 #location-freshbooks {
-	//
+	left: @left-side-info;
+	top: @freshbooks-info - 23;
 }
 
 #description-freshbooks {
-	left: 18px;
+	left: @left-side-info;
+	top: @freshbooks-info;
 }
 
 #point-freshbooks {
-	//
+	left: @left-side-point;
+	top: @freshbooks-info + 16;
 }
 
 /****************************************
@@ -106,19 +112,21 @@
 	top: 28%;
 }
 
+@bibliocommons-info: @2014 + 23;
+
 #location-bibliocommons {
-	left: 18px;
-	top: 35px;
+	left: @left-side-info;
+	top: @bibliocommons-info - 23;
 }
 
 #description-bibliocommons {
-	left: 18px;
-	top: 58px;
+	left: @left-side-info;
+	top: @bibliocommons-info;
 }
 
 #point-bibliocommons {
 	left: @left-side-point;
-	top: 74px;
+	top: @bibliocommons-info + 16;
 }
 
 /****************************************
@@ -137,19 +145,21 @@
 	top: 32%;
 }
 
+@wishabi-info: @2014 + @year + (@month * 4) + 5;
+
 #location-wishabi {
-	left: 18px;
-	top: 144px;
+	left: @left-side-info;
+	top: @wishabi-info - 23;
 }
 
 #description-wishabi {
-	left: 18px;
-	top: 167px;
+	left: @left-side-info;
+	top: @wishabi-info;
 }
 
 #point-wishabi {
 	left: @left-side-point;
-	top: 193px;
+	top: @wishabi-info + 26;
 }
 
 /****************************************
@@ -168,19 +178,21 @@
 	left: 15%;
 }
 
+@cui-info: @2012 + (@month * 8) + 32;
+
 #location-cui {
-	left: 18px;
-	top: 264px;
+	left: @left-side-info;
+	top: @cui-info - 24;
 }
 
 #description-cui {
-	left: 18px;
-	top: 288px;
+	left: @left-side-info;
+	top: @cui-info;
 }
 
 #point-cui {
 	left: @left-side-point;
-	top: 313px;
+	top: @cui-info + 25;
 }
 
 /****************************************
@@ -200,19 +212,21 @@
 	left: 21%;
 }
 
+@ta-info: @2010 + 16;
+
 #location-ta {
-	left: 18px;
-	top: 365px;
+	left: @left-side-info;
+	top: @ta-info - 23;
 }
 
 #description-ta {
-	left: 18px;
-	top: 388px;
+	left: @left-side-info;
+	top: @ta-info;
 }
 
 #point-ta {
 	left: @left-side-point;
-	top: 394px;
+	top: @ta-info + 6;
 }
 
 /****************************************
@@ -232,19 +246,21 @@
 	left: 8%;
 }
 
+@laycon-info: @2010 + @year + 14;
+
 #location-laycon {
-	left: 18px;
-	top: 452px;
+	left: @left-side-info;
+	top: @laycon-info - 24;
 }
 
 #description-laycon {
-	left: 18px;
-	top: 476px;
+	left: @left-side-info;
+	top: @laycon-info;
 }
 
 #point-laycon {
 	left: @left-side-point;
-	top: 491px;
+	top: @laycon-info + 15;
 }
 
 /****************************************
@@ -263,14 +279,16 @@
 	left: 17%;
 }
 
+@freelance-info: @2008 + 20;
+
 #point-freelance {
 	left: @left-side-point;
-	top: 586px;
+	top: @freelance-info + 16;
 }
 
  #description-freelance {
-	left: 18px;
-	top: 570px;
+	left: @left-side-info;
+	top: @freelance-info;
 }
 
 /****************************************
