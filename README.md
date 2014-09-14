@@ -16,7 +16,7 @@ $ python -m SimpleHTTPServer
 ```
 You'll then be able to access the page from http://0.0.0.0:8000
 
-With LiveReload, `autoprefixer -m css/style.css` is automatically run after `LESS` files are processed.
+With LiveReload, make sure `autoprefixer -m css/style.css` is automatically run after `LESS` files are processed.
 
 # License
 
