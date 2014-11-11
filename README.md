@@ -1,6 +1,6 @@
 # Re-Resume
 
-My Resumé, re-thought for the web – [view live](http://pirijan.org).
+My Resumé, re-thought for the web – [view live](http://pketh.org/re-resume/).
 
 <a href="http://pirijan.org">
 <img src="http://payload100.cargocollective.com/1/0/1410/4304324/prt_200x280_1380127439_2x.png" width="200" height="280">
